@@ -15,14 +15,13 @@ function selectGroup(id: SkillGroupId) {
 </script>
 
 <template>
-  <section id="skills" class="space-y-6 pt-10">
+  <section id="skills"     class="pt-10 pb-16 min-h-[calc(100vh-150px)] flex flex-col justify-start md:justify-center space-y-6"
+  >
     <div class="space-y-1">
       <h2 class="text-2xl font-semibold text-slate-900 dark:text-slate-50">
         Technical Skills
       </h2>
-      <p class="text-sm text-slate-600 dark:text-slate-300">
-        Explore my skills grouped by area. Click a category to focus on that field.
-      </p>
+    
     </div>
 
     <!-- Group selector buttons -->
@@ -45,15 +44,16 @@ function selectGroup(id: SkillGroupId) {
     </div>
 
     <!-- Selected group card -->
-    <div
-      class="rounded-2xl border bg-white p-5 shadow-sm transition-all duration-200 dark:bg-slate-900"
-      :class="
-        selectedGroup
-          ? 'border-emerald-500 shadow-emerald-500/20'
-          : 'border-slate-200 dark:border-slate-800'
-      "
-      tabindex="0"
-    >
+  <div
+  class="rounded-2xl border bg-white p-5 shadow-sm transition-all duration-300 dark:bg-slate-900"
+  :class="[
+    selectedGroup
+      ? 'border-emerald-500 shadow-l shadow-emerald-500/40 ring-2 ring-emerald-500/40'
+      : 'border-slate-200 dark:border-slate-800'
+  ]"
+  tabindex="0"
+>
+
       <div class="flex items-baseline justify-between gap-2 mb-3">
         <div>
           <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-50">

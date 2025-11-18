@@ -5,9 +5,11 @@ import { profile } from "../data/profile"
 <template>
   <section
     id="home"
-    class="grid gap-10 md:grid-cols-2 items-center"  >
+    class="grid gap-10 md:grid-cols-2 items-center
+     pt-10 pb-16 min-h-[calc(100vh-150px)] flex flex-col justify-start md:justify-center space-y-6"
+  >
     <!-- Portrait -->
-    <div class="flex justify-center md:justify-left">
+    <div class="flex justify-center md:justify-around">
       <img
         :src="profile.portrait"
         :alt="profile.name"

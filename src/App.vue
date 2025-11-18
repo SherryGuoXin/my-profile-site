@@ -4,7 +4,10 @@ import NavBar from './components/NavBar.vue'
 import Home from './components/Home.vue'
 import projects from './components/Projects.vue'
 import Skills from "./components/Skills.vue"
-
+import Footer from "./components/Footer.vue"
+import Contact from "./components/Contact.vue"
+import Experience from "./components/Experience.vue"
+import LogosBar from "./components/LogosBar.vue"
 
 type SectionId = 'home' | 'projects' | 'skills' | 'contact'
 
@@ -88,6 +91,8 @@ watch(isDark, (val) => {
         <Home />
       </section>
 
+  <Experience />
+
       <!-- Projects -->
       <section id="projects" class="space-y-4">
        <projects />
@@ -98,14 +103,15 @@ watch(isDark, (val) => {
         
           <Skills />
       </section>
+         <!-- LogosBar  <LogosBar :is-dark="isDark" />  --> 
 
       <!-- Contact -->
       <section id="contact" class="space-y-4">
-        <h2 class="text-2xl font-semibold text-slate-900 dark:text-slate-50">Contact</h2>
-        <p class="text-sm text-slate-600 dark:text-slate-300">
-          Email: <a href="mailto:you@example.com" class="text-emerald-600 dark:text-emerald-400 underline">you@example.com</a>
-        </p>
+       <Contact />
       </section>
+
+      
     </main>
+    <Footer />
   </div>
 </template>

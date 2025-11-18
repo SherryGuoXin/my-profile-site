@@ -17,15 +17,16 @@ function goPrev() {
 </script>
 
 <template>
-  <section id="projects" class="space-y-6 pt-10">
+   <section
+    id="projects"
+    class="pt-10 pb-16 min-h-[calc(100vh-150px)] flex flex-col justify-start md:justify-center space-y-6"
+  >
     <div class="flex items-baseline justify-between gap-4">
       <div>
         <h2 class="text-2xl font-semibold text-slate-900 dark:text-slate-50">
           Projects
         </h2>
-        <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">
-          A selection of projects showcasing my experience across different stacks.
-        </p>
+      
       </div>
 
       <!-- Nav buttons -->
@@ -66,7 +67,15 @@ function goPrev() {
           <div class="flex-1 space-y-1">
             <div class="flex flex-wrap items-baseline gap-2 justify-between">
               <h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50">
+               <a :href = "currentProject.link"  
+               target="_blank"
+               rel="noopener noreferrer"
+               class="font-medium text-slate-700 hover:text-emerald-600 dark:text-slate-200 dark:hover:text-emerald-400 transition"
+ >
+               
                 {{ currentProject.title }}
+
+              </a>
               </h3>
               <span class="text-xs text-slate-500 dark:text-slate-400">
                 {{ currentProject.time }}
