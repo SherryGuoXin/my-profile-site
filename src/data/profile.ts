@@ -164,7 +164,7 @@ export const profile = {
   description:
     "Analytical software developer experienced across Java-based systems, cloud environments, databases, and full-stack web applications. Adept at troubleshooting complex issues, reading and debugging JVM stack traces, and managing the lifecycle of systems from design to deployment.",
 
-  portrait: "/portrait.jpg",
+  portrait: "./portrait.jpg",
 
   links: [
     {
@@ -205,7 +205,7 @@ export const profile = {
         "DigitalOcean Droplet",
         "Ubuntu",
       ],
-      logo: "/northernway.png",
+      logo: "./northernway.png",
       link: "https://www.northernwayconsulting.ca/",
     },
   ],
@@ -230,7 +230,7 @@ export const profile = {
         "Auth0 (OAuth2)",
         "CI/CD pipelines",
       ],
-      logo: "/logos/smartpix.png",
+      logo: "./logos/smartpix.png",
       link: "https://github.com/SherryGuoXin/Smartpix",
     },
     {
@@ -248,7 +248,7 @@ export const profile = {
         "CSV export",
         "Email password recovery",
       ],
-      logo: "/logos/smartstockselector.png",
+      logo: "./logos/smartstockselector.png",
       link: "https://github.com/SherryGuoXin/smartStock",
     },
     {
@@ -267,7 +267,7 @@ export const profile = {
         "Docker",
         "Kubernetes",
       ],
-      logo: "/logos/mockfacebook.png",
+      logo: "./logos/mockfacebook.png",
       link: "#",
     },
     {
@@ -286,7 +286,7 @@ export const profile = {
         "Exception handling",
         "JUnit testing",
       ],
-      logo: "/logos/java-suite.png",
+      logo: "./logos/java-suite.png",
       link: "#",
     },
   ],
