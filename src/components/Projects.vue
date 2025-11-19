@@ -57,8 +57,8 @@ function goPrev() {
           <!-- Logo -->
           <div class="flex-shrink-0">
             <img
-              :src="currentProject.logo"
-              :alt="currentProject.title"
+              :src="currentProject?.logo"
+              :alt="currentProject?.title"
               class="h-12 w-12 rounded-lg object-contain bg-slate-100 dark:bg-slate-800 p-1"
             />
           </div>
@@ -67,32 +67,32 @@ function goPrev() {
           <div class="flex-1 space-y-1">
             <div class="flex flex-wrap items-baseline gap-2 justify-between">
               <h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50">
-               <a :href = "currentProject.link"  
+               <a :href = "currentProject?.link"  
                target="_blank"
                rel="noopener noreferrer"
                class="font-medium text-slate-700 hover:text-emerald-600 dark:text-slate-200 dark:hover:text-emerald-400 transition"
  >
                
-                {{ currentProject.title }}
+                {{ currentProject?.title }}
 
               </a>
               </h3>
               <span class="text-xs text-slate-500 dark:text-slate-400">
-                {{ currentProject.time }}
+                {{ currentProject?.time }}
               </span>
             </div>
 
             <p class="text-xs font-medium text-emerald-700 dark:text-emerald-300">
-              {{ currentProject.company }}
+              {{ currentProject?.company }}
             </p>
 
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              {{ currentProject.description }}
+              {{ currentProject?.description }}
             </p>
 
             <div class="mt-3 flex flex-wrap gap-2 text-xs">
               <span
-                v-for="stack in currentProject.techStacks"
+                v-for="stack in currentProject?.techStacks"
                 :key="stack"
                 class="rounded-full bg-emerald-500/10 px-2 py-1 text-emerald-700 dark:text-emerald-300"
               >

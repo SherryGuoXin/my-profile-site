@@ -7,7 +7,8 @@ import Skills from "./components/Skills.vue"
 import Footer from "./components/Footer.vue"
 import Contact from "./components/Contact.vue"
 import Experience from "./components/Experience.vue"
-import LogosBar from "./components/LogosBar.vue"
+//to be continue with 
+//import LogosBar from "./components/LogosBar.vue"
 
 type SectionId = 'home' | 'projects' | 'skills' | 'contact'
 

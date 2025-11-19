@@ -54,9 +54,109 @@ export const navConfig = {
 
 export const sectionIds: SectionId[] = navConfig.items.map((i) => i.id)
 
+
+export const skillGroups: SkillGroup[] = [
+  {
+    id: "frontend",
+    label: "UI & Front-End",
+    subtitle: "Web interfaces, components, accessibility",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Vue.js",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Material UI",
+      "jQuery",
+      "Streamlit",
+      "Django",
+      "Responsive Design",
+      "WCAG Accessibility Standards",
+    ],
+  },
+  {
+    id: "backend",
+    label: "Back-End & APIs",
+    subtitle: "APIs, business logic, architecture",
+    items: [
+      "Java",
+      "Spring Boot",
+      "Spring JPA",
+      "JDBC",
+      "REST APIs",
+      "Python",
+      "PHP",
+      "Dart",
+      "PL/SQL",
+      "OAuth2 and JWT Authentication",
+      "Microservices",
+      "Object-Oriented Design (DAO / DTO / Singleton)",
+      "Maven",
+      "JUnit Testing",
+      "Bash scripting",
+    ],
+  },
+  {
+    id: "data",
+    label: "Data & Databases",
+    subtitle: "Storage, querying, analytics",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "MS SQL Server",
+      "MS Access",
+      "Oracle",
+      "SQLite",
+      "MongoDB (NoSQL)",
+      "Neo4j (Graph Database)",
+      "ETL processes",
+      "Query optimization",
+      "Index tuning",
+      "Data modeling",
+    ],
+  },
+  {
+    id: "cloud",
+    label: "Cloud, Deployment & DevOps",
+    subtitle: "Infrastructure, servers, CI/CD",
+    items: [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Ubuntu & Linux server configuration",
+      "Nginx",
+      "Cloudflare",
+      "DigitalOcean Droplet",
+      "Vite",
+      "Git",
+      "CI/CD pipelines",
+      "SSL certificates",
+      "SSH configuration",
+    ],
+  },
+  {
+    id: "tools",
+    label: "Tools & Platforms",
+    subtitle: "Productivity and collaboration stack",
+    items: [
+      "WordPress CMS",
+      "SharePoint",
+      "Figma",
+      "Postman",
+      "Jira",
+      "Visual Studio Code",
+      "IntelliJ IDEA",
+    ],
+  },
+]
+
 // ───────────────────────────────────────────────────────────
 // Profile (single object)
 // ───────────────────────────────────────────────────────────
+
 
 export const profile = {
   name: "Sherry Guo",
@@ -77,7 +177,7 @@ export const profile = {
     },
   ],
 
-  experiences: <Experience[]>[
+  experiences:[
     {
       time: "May 2025 – Present",
       title: "Web Developer Intern",
@@ -113,7 +213,7 @@ export const profile = {
   // ────────────────────────────────────────────────────────
   // Projects (from resume)
 // ────────────────────────────────────────────────────────
-  projects: <Project[]>[
+  projects: [
     {
       time: "May 2025",
       title: "SmartPix – Full-Stack AI-Powered Image Editing Web Application",
@@ -194,105 +294,7 @@ export const profile = {
   // ────────────────────────────────────────────────────────
   // Skills (grouped, toggleable - enriched from resume)
 // ────────────────────────────────────────────────────────
-  skills: <SkillGroup[]>[
-    {
-      id: "frontend",
-      label: "UI & Front-End",
-      subtitle: "Web interfaces, components, accessibility",
-      items: [
-        // Languages / frameworks
-        "JavaScript",
-        "TypeScript",
-        "React.js",
-        "Next.js",
-        "Vue.js",
-        "HTML",
-        "CSS",
-        "Tailwind CSS",
-        "Material UI",
-        "jQuery",
-        "Streamlit",
-        "Django",
-        // UX / accessibility
-        "Responsive Design",
-        "WCAG Accessibility Standards",
-      ],
-    },
-    {
-      id: "backend",
-      label: "Back-End & APIs",
-      subtitle: "APIs, business logic, architecture",
-      items: [
-        "Java",
-        "Spring Boot",
-        "Spring JPA",
-        "JDBC",
-        "REST APIs",
-        "Python",
-        "PHP",
-        "Dart",
-        "PL/SQL",
-        "OAuth2 and JWT Authentication",
-        "Microservices",
-        "Object-Oriented Design (DAO / DTO / Singleton)",
-        "Maven",
-        "JUnit Testing",
-        "Bash scripting",
-      ],
-    },
-    {
-      id: "data",
-      label: "Data & Databases",
-      subtitle: "Storage, querying, analytics",
-      items: [
-        "MySQL",
-        "PostgreSQL",
-        "MS SQL Server",
-        "MS Access",
-        "Oracle",
-        "SQLite",
-        "MongoDB (NoSQL)",
-        "Neo4j (Graph Database)",
-        "ETL processes",
-        "Query optimization",
-        "Index tuning",
-        "Data modeling",
-      ],
-    },
-    {
-      id: "cloud",
-      label: "Cloud, Deployment & DevOps",
-      subtitle: "Infrastructure, servers, CI/CD",
-      items: [
-        "Docker",
-        "Kubernetes",
-        "AWS",
-        "Ubuntu & Linux server configuration",
-        "Nginx",
-        "Cloudflare",
-        "DigitalOcean Droplet",
-        "Vite",
-        "Git",
-        "CI/CD pipelines",
-        "SSL certificates",
-        "SSH configuration",
-      ],
-    },
-    {
-      id: "tools",
-      label: "Tools & Platforms",
-      subtitle: "Productivity and collaboration stack",
-      items: [
-        "WordPress CMS",
-        "SharePoint",
-        "Figma",
-        "Postman",
-        "Jira",
-        "Visual Studio Code",
-        "IntelliJ IDEA",
-      ],
-    },
-  ],
+skills: skillGroups,
 
   // ────────────────────────────────────────────────────────
   // Contact (from resume header)

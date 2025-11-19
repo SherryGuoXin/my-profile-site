@@ -7,6 +7,8 @@ const props = defineProps<{
   activeSection: SectionId
 }>()
 
+console.log(props.isDark);
+
 const emit = defineEmits<{
   (e: 'toggle-theme'): void
 }>()
